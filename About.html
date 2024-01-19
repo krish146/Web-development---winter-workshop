@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.container{
+display:flex;
+position:relative;
+}
+.container::before{
+    background-image: url('giphy.gif');
+position:absolute;
+content:'';
+    top:0;
+    bottom:0;right:0;left:0;
+    z-index:-1;
+    opacity: 0.9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.image{
+    max-width: 50%;
+
+    height: 100vh;
+}
+.image img{
+    max-width: 80%;
+    margin-top:100px;
+    margin-left:50px;
+    border-radius: 5%;
+}
+.aboutme{
+    max-width: 50%;
+    color:white;
+}
+    .about{
+  align-items: center;
+  margin-top: 100px;
+}
+
+.name{
+ margin:auto;
+ max-width: 300px;
+ 
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+</style>
+</head>
+<body>
+ 
+  <div class="container">
+    <div class="image">
+        <img src="cidsis.png" alt="yashesh" class="me">
+    </div>
+    <div class="aboutme">
+        <div class="about">
+        <h2 class="name"> Yashesh</h2>
+        <p>
+            As a student at SRM University, Amravathi, I am currently seeking internship opportunities to expand my knowledge
+domain and enhance my coding and communication skills. I am a fast learner and dedicated to work. I always fulfill my
+responsibilities sincerely and try to bring the best out of me.
+        </p>
+        <h4>Skills</h4>
+        <ul class="skills">
+            <li>C/C++</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>MERN Stack</li>
+            <li>Machine Learning</li>
+        </ul>
+        
+
+    </div>
+   
+  </div>
+
+  
+</body>
+</html>
