@@ -5,36 +5,45 @@
 .container{
 display:flex;
 position:relative;
+/* justify-content: space-between; */
 }
 .container::before{
     background-image: url('giphy.gif');
 position:absolute;
-content:'';
+content:'hello';
     top:0;
     bottom:0;right:0;left:0;
-    z-index:-1;
-    opacity: 0.9;
+    z-index:-1; 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.image{
-    max-width: 50%;
 
+.image{
+    display:flex;
+    max-width: 100%;
+   flex:1;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 .image img{
-    max-width: 80%;
-    margin-top:100px;
-    margin-left:50px;
+    max-width: 50%;
+    margin-bottom:30vh;
+    
+    padding-left:20vh;
     border-radius: 5%;
 }
 .aboutme{
-    max-width: 50%;
+    max-width: 100%;
     color:white;
+    flex:1;
+  
 }
-    .about{
-  align-items: center;
+.about{
+        display:flex;
+        flex-direction: column;
+    justify-content: flex-end;
   margin-top: 100px;
 }
 
@@ -47,18 +56,33 @@ body, html {
     margin: 0;
     padding: 0;
 }
+.skills li{
+    list-style:none;
+      margin-right:10px;
+      margin-top:5px;
+   border:2px dotted blue;
+}
+.skills{
+    justify-content: flex-start;
+    display:flex;
+    flex-wrap:wrap;
+    padding:0px;
 
+}
+h4{
+    margin:0px;
+}
 </style>
 </head>
 <body>
- 
+
   <div class="container">
     <div class="image">
         <img src="cidsis.png" alt="yashesh" class="me">
     </div>
     <div class="aboutme">
         <div class="about">
-        <h2 class="name"> Yashesh</h2>
+        <h2 class="name">Yashesh</h2>
         <p>
             As a student at SRM University, Amravathi, I am currently seeking internship opportunities to expand my knowledge
 domain and enhance my coding and communication skills. I am a fast learner and dedicated to work. I always fulfill my
@@ -71,13 +95,16 @@ responsibilities sincerely and try to bring the best out of me.
             <li>Java</li>
             <li>MERN Stack</li>
             <li>Machine Learning</li>
+            <li>Problem Solving</li>
+            <li>Data Structures</li>
+            <li>Algorithms</li>
         </ul>
         
 
     </div>
    
   </div>
-
+</div>
   
 </body>
 </html>
